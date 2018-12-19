@@ -1,0 +1,189 @@
+.container{
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px 0;
+  border-radius: 2px; 
+  .content{
+    width: 100%;
+    height: auto;
+    padding: 32px;
+    .leftMenu{
+      width: 100%;
+      max-width: 285px; 
+      height: auto;
+      box-sizing: border-box;
+      border: 1px solid #DBDBDB;
+      border-radius: 2px;
+      margin: 0;
+      padding: 0;
+      li{
+        height: 50px;
+        background: #fff;
+        color: #000;
+        list-style-type: none;
+        text-align: center;
+        line-height: 50px;
+        cursor: pointer;
+      }
+      .item{
+        &:hover{
+          background: #F7F9FA;
+        }
+      }
+      .itemActive{
+        background: #E9E9E9;
+        color: #fff;
+      }
+    }
+    .showDesign{
+      height: auto;
+      .banner{
+        height: 50px;
+        margin-bottom: 10px;
+        background-color: #f2f2f2;
+        color: #444;
+        text-align: center;
+        line-height: 50px;
+      }
+      .goodsListA{
+        width: 100%;
+        height: auto;
+        .goodItem{
+          width: 100%;
+          height: 60px;
+          background-color: #f2f2f2;
+          margin-bottom: 10px;
+        }
+      }
+      .goodsListB{
+        .goodItem{
+          float: left;
+          width: 47%;
+          height: 60px;
+          background-color: #f2f2f2;
+          &:nth-child(2){
+            margin-left: 6%;
+          }
+        }
+        &::after{
+          content: '';
+          display: block;
+          clear: both;
+        }
+      }
+      .goodsListC{
+        .goodItem{
+          float: left;
+          width: 30%;
+          height: 60px;
+          background-color: #f2f2f2;
+          &:not(:nth-child(3n + 1)){
+            margin-left: 5%;
+          }
+        }
+        &::after{
+          content: '';
+          display: block;
+          clear: both;
+        }
+      }
+    }
+    .uploadBt{ 
+      width: 100% !important;
+      height: 100%;
+    }
+    .recommendCommodities{
+      width: 100%;
+      height: auto;
+      padding-top: 50px; 
+      .recommendTitle{
+        display: inline-block;
+        width: 100%;
+        height: 32px;
+        line-height: 32px;
+        color: #000;
+        font-size: 14px;
+        padding-right: 8px;
+      }
+      .recommendConsole{
+        width: 100%;
+        height: 32px;
+        line-height: 32px;
+        text-align: right;
+      }
+      .blockMargin{
+        margin-left: 15px;
+      }
+      .commoditieList{
+        margin: 50px 0 50px 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+        li{
+          list-style-type: none;
+          width: 180px;
+          height: 230px;
+          box-sizing: border-box;
+          border: 1px solid #D9D9D9; 
+          float: left;
+          margin-bottom: 10px;
+          margin-right: 15px;
+          .showImg{
+            display: block;
+            width: 100%;
+            height: 180px;
+            box-sizing: border-box;
+            padding: 10px;
+            img {
+              height: 100%;
+              width: 100%;
+            }
+          }
+          .showName{
+            display: block;
+            width: 100%;
+            height: 50px;
+            border-top: 1px solid #D9D9D9;
+            line-height: 50px;
+            padding-left: 8px;
+            position: relative;
+            span {
+              display: inline-block;
+              font-size: 12px;
+              color: #595959;
+              width: 140px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+            .closeIcon{
+              position: absolute;
+              right: 5px;
+              top: 50%;
+              transform: translateY(-50%);
+              cursor: pointer;
+            }
+          }
+        }
+        &::after{
+          content: '';
+          display: block;
+          clear: both;
+        }
+      }
+    }
+  }
+}
+
+.diyLabel{
+  font-size: 14px;
+  color: #595959;
+  margin-right: 15px;
+}
+
+:global(.parition-banner-uploader > .ant-upload){
+  width: 350px;
+  height: 200px;
+}

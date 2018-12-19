@@ -1,0 +1,20 @@
+
+html, body, :global(#root) {
+  height: 100%;
+  min-width: 1420px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.ant-modal-footer{
+  text-align: center;
+  border-top: none;
+  padding: 10px 16px 50px;
+}
+.ant-modal-footer button + button{
+  margin-left: 30px;
+}
+.ant-modal-body p{
+  text-align: center;
+}

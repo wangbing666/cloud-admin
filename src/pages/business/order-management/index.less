@@ -1,0 +1,52 @@
+.orderlist{
+  table{
+    th:nth-child(odd){
+      background: #DEF1F0;
+    }
+    th:nth-child(even){
+      background: #EFE1F5;
+    }
+  }
+  .orderBody{
+    background: #fff;
+    min-width: 976px;
+  }
+  .formContent{
+    margin-top: 30px;
+  }
+  .orderHead{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #e9e9e9;
+    box-sizing: border-box;
+    .orderHeadLeft{
+      float: left;
+      height: 60px;
+      width: auto;
+      padding-left: 32px;
+      span{
+        font-size: 16px;
+        color: #151515;
+        letter-spacing: 1px;
+        line-height: 60px;
+        font-family: "webfont-heiCui";
+        font-weight: 600;
+      }
+    }
+  }
+  .formContent{
+    .select_order{
+      label::after{
+        content: '';
+      }
+      >div{
+        margin-left: -34px;
+      }
+    }
+  }
+}
+.pagination{
+  margin-top: 24px;
+  margin-bottom: 70px;
+  text-align: right;
+}

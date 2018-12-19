@@ -1,0 +1,166 @@
+.container{
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px 0;
+  border-radius: 2px;
+  padding-bottom: 50px;
+  .previewContainer {
+    width: 375px;
+    margin: 50px auto;
+    height: auto;
+    border: 1px solid #f4f4f4;
+    background-color: #f9f9f9;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    h1 {
+      margin: 0;
+      height: 45px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 45px;
+      background-color: #f4f4f4;
+      position: relative;
+      text-overflow: ellipsis;
+      white-space:nowrap;
+      overflow: hidden;
+      padding-left: 50px;
+      padding-right: 50px;
+      .leftIcon {
+        color: #a9acad;
+        display: inline-block;
+        float: left;
+        font-size: 27px;
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .goodsContent {
+      width: 100%;
+      height: auto;
+      padding-bottom: 20px;
+      h2 {
+        margin: 0;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 15px;
+      }
+      .templateA {
+        height: auto;
+        width: auto;
+        overflow-x: scroll;
+        &::-webkit-scrollbar {/*滚动条整体样式*/
+          width: 4px;     /*高宽分别对应横竖滚动条的尺寸*/
+          height: 4px;
+          opacity: 0;
+        }
+        &::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+          border-radius: 5px;
+          -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+          background: rgba(0,0,0,0.2);
+          }
+        &::-webkit-scrollbar-track {/*滚动条里面轨道*/
+          -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+          border-radius: 0;
+          background: rgba(0,0,0,0.1);
+        }
+        .track {
+          height: auto;
+          min-width: 375px;
+          &::after {
+            display: block;
+            content: '';
+            clear: both;
+          }
+          .goodsItem {
+            width: 150px;
+            height: 200px;
+            float: left;
+            margin-right: 10px;
+            border: 1px solid #f4f4f4;
+            background: #fff;
+            img {
+              width: 120px;
+              height: 120px;
+              margin: 15px 15px 10px 15px;
+            }
+            h5 {
+              text-align: left;
+              height: 27px;
+              line-height: 27px;
+              margin: 0;
+              font-size: 16px;
+              width: 148px;
+              text-overflow: ellipsis;
+              white-space:nowrap;
+              overflow: hidden;
+              padding-left: 20px;
+            }
+            h4 {
+              font-size: 16px;
+              height: 23px;
+              line-height: 23px;
+              color: red;
+              margin: 0;
+              padding-left: 20px;
+            }
+          }
+        }
+        
+      }
+      .templateB {
+        height: auto;
+        width: 100%;
+        padding-left: 22px;
+        padding-right: 22px;
+        .goodsItem {
+          width: 150px;
+          height: 200px;
+          float: left;
+          border: 1px solid #f4f4f4;
+          background: #fff;
+          margin-bottom: 22px;
+          &:nth-child(2n) {
+            margin-left: 28px;
+          }
+          img {
+            width: 120px;
+            height: 120px;
+            margin: 15px 15px 10px 15px;
+          }
+          h5 {
+            text-align: left;
+            height: 27px;
+            line-height: 27px;
+            margin: 0;
+            font-size: 16px;
+            width: 148px;
+            text-overflow: ellipsis;
+            white-space:nowrap;
+            overflow: hidden;
+            padding-left: 20px;
+          }
+          h4 {
+            font-size: 16px;
+            height: 23px;
+            line-height: 23px;
+            color: red;
+            margin: 0;
+            padding-left: 20px;
+          }
+        }
+        &::after {
+          display: block;
+          content: '';
+          clear: both;
+        }
+      }
+    }
+  }
+}

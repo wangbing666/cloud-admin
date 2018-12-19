@@ -1,0 +1,228 @@
+.container{
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px 0;
+  border-radius: 2px; 
+  .designItem {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    .designItemHead{
+      width: 100%;
+      height: 50px;
+      .headLeft{
+        font-size: 14px;
+        color: #000000;
+      }
+      a{
+        font-size: 14px;
+        color: #007AED;
+      }
+      button{
+        span{
+          color: #007AED;
+        }
+      }
+    }
+    .moveCos{
+      display: inline-block;
+      width: 90px;
+    }
+    .groupTitle{
+      margin-left: 20px;
+      font-size: 14px;
+      color: #000;
+    }
+    .itemList{
+      width: 940px;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      margin-left: 20px;
+      li{
+        list-style-type: none;
+        width: 100%;
+        width: 180px;
+        height: 228px;
+        border: 1px solid #D9D9D9;
+        border-radius: 2px;
+        margin-bottom: 10px;
+        float: left;
+        &:not(:nth-child(5n + 1)){
+          margin-left: 10px;
+        }
+        position: relative;
+        .upload{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        .bgCover{
+          height: 178px;
+          width: 100%;
+          display: block;
+          overflow: hidden;
+          background-position: center;
+          background-size: cover;
+        }
+      }
+      .bannerItem{
+        cursor: pointer;
+        .controlBt{
+          width: 100%;
+          display: block;
+          height: 50px;
+          border-top: 1px solid #D9D9D9;
+          line-height: 50px;
+          text-align: center;
+          a:nth-child(1){
+            padding-right: 12px;
+            border-right: 1px solid #E9E9E9;;
+          }
+          a:nth-child(2){
+            padding-left: 12px;
+          }
+        }
+      }
+      .groupItem{
+        height: auto;
+        border: none;
+        .controlBt{
+          width: 100%;
+          display: block;
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          .active{
+            color: #007AED;
+          }
+          .dafault{
+            color: #595959;
+          }
+        }
+        span:nth-child(2){
+          margin-top: -1px; 
+        }
+        p{
+          margin-top: 20px;
+          text-align: center;
+        }
+      }
+      .partitionItem{
+        position: relative;
+        span{
+          box-sizing: border-box;
+        }
+        .partitionBanner{
+          width: 100%;
+          height: 108px;
+          margin-bottom: 10px;
+          display: block;
+          background-position: center;
+          background-size: cover;
+        }
+        .partitonGoodTmpC{
+          display: block;
+          width: 35%;
+          height: 50px;
+          float: left;
+          &:not(:nth-of-type(2)){
+            margin-left: 5%;
+          }
+          margin-bottom: 10px;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        .partitonGoodsMore{
+          width: 20px;
+          height: 50px;
+          box-sizing: border-box;
+          border: 1px solid #999;
+          float: right;
+          word-wrap: break-word;
+          text-align: center;
+          padding-top: 3px;
+          margin-right: 10px;
+        }
+        .partitonGoodTmpB{
+          display: block;
+          width: 45%;
+          height: 50px;
+          float: left;
+          &:nth-of-type(3){
+            margin-left: 10%;
+          }
+          margin-bottom: 10px;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        .partitonGoodTmpA{
+          display: block;        
+          width: 90%;
+          height: 50px;
+          float: left;
+          &:nth-of-type(2){
+            margin-left: 5%;
+          }
+          margin-bottom: 10px;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        .controlBt{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 50px;
+          display: block;
+          border-top: 1px solid #D9D9D9;
+          line-height: 50px;
+          text-align: center;
+
+          a:nth-child(1){
+            padding-right: 12px;
+            border-right: 1px solid #E9E9E9;;
+          }
+          a:nth-child(2){
+            padding-left: 12px;
+          }
+        }
+      }
+      &::after{
+        display: block;
+        content: '';
+        clear: both;
+      }
+    }
+  }
+  .tabOperate{
+    a{
+      margin-right: 5px;
+    }
+  }
+}
+.itemLabel{
+  font-family: SourceSansPro-Semibold;
+  font-size: 14px;
+  color: #000000;
+}
+.styleBlock{
+  display: inline-block;
+  width: 90px;
+  height: 30px;
+  box-shadow: 0 2px 4px 0;
+  span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.pagination{
+  margin-top: 20px;
+  padding-right: 20px;
+  text-align: right;
+}
